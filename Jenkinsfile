@@ -1,9 +1,6 @@
 pipeline {
   agent any 
-  
-  tools {
-    maven 'Meven 3.9.6'
-  }
+
   
   stages {
     stage("one") {
