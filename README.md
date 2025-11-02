@@ -19,7 +19,8 @@ As part of devops learning you could take this app and
   * Deploy using Kubernetes 
   * Setup Automated Devployments with ArgoCD 
   * Setup DevSecOps workflows 
-  * Deploy it on Cloud and automate that with Terraform 
+  * Deploy it on Cloud and automate that with Terraform
+  * test
 
 These are just a few ideas you could try and then build so much on top of this. 
 
