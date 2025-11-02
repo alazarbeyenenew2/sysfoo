@@ -1,24 +1,29 @@
 pipeline {
   agent any 
+  
+  tools {
+    maven 'Meven 3.9.6'
+  }
+  
   stages {
     stage("one") {
       steps{
-         echo 'step 1'
-         sleep 3 
+         echo 'compiling'
+         sh 'mvn compile'
       }
     }
 
     stage ("two") {
       steps{
-          echo 'step 2'
-          sleep 9 
+          echo 'testing'
+          sh 'mvn clean test'
       }
     }
 
     stage("three") {
        steps {
-         echo ' step 3'
-         sleep 5 
+         echo 'packaging'
+         sh 'mvn package -DskipTests'
        }
     }
   }
